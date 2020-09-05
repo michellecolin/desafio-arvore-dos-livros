@@ -1,1 +1,16 @@
-<p>book-details works!</p>
+<div class="container">
+  <div class="row book-details mt-5">
+    <div class="col-3 image" [ngStyle]="{'background-image': 'url(assets/img/' + book.img +')'}">
+      <span *ngIf="book.interactive" class="badge badge-pill badge-success interactive" placement="top" ngbTooltip="O módulo de leitura interativa está disponível para esse livro">Leitura interativa</span>
+    </div>
+    <div class="col-8 ml-4">
+      <h1>{{book.name}}</h1>
+      <p class="mt-4"><strong>Autor(a):</strong> {{book.author}}</p>
+      <p class="mt-1"><strong>Editora:</strong> {{book.publisher}}</p>
+      <p class="mt-1"><strong>Edição:</strong> {{book.edition}}</p>
+
+      <p class="mt-4">{{book.description}}</p>
+
+      <button class="btn btn-primary mt-5">Ler Agora</button>
+    </div>
+  </div>

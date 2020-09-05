@@ -4,6 +4,7 @@ import { BookReaderComponent } from './book-reader/book-reader.component';
 import { BookDetailsComponent } from './book-details/book-details.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,7 +12,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   declarations: [BookReaderComponent, BookDetailsComponent, BookListComponent],
   imports: [
     CommonModule,
-    NgbModule
+    NgbModule,
+    RouterModule
   ]
 })
 export class BookModule { }

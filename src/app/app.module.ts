@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BookModule } from './book/book.module';
 import { RecordingsModule } from './recordings/recordings.module';
 import { TeatcherInteractionsModule } from './teatcher-interactions/teatcher-interactions.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TeatcherInteractionsModule } from './teatcher-interactions/teatcher-int
     BookModule,
     RecordingsModule,
     TeatcherInteractionsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

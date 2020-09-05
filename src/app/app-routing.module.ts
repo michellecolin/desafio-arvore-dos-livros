@@ -8,6 +8,11 @@ const routes: Routes = [  {
     pathMatch: 'full',
     component: BookListComponent,
     data: { title: 'home' }
+  },
+  {
+    path: 'book/:id',
+    component: BookDetailsComponent,
+    data: { title: 'Detalhes do livro' }
   }];
 
 @NgModule({

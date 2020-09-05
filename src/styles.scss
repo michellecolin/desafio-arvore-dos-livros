@@ -3,6 +3,8 @@
 /* Vars */
 $bg-color: linear-gradient(to left,#45cad0,#45d0c1);
 $light-grey: rgba(0,0,0,0.4);
+$dark-grey: #53656F;
+$primary-color: #34b3a6;
 
 /* Typography */
 h1 {
@@ -20,6 +22,10 @@ h6 {
   font-weight: normal;
 }
 
+p {
+  color: $dark-grey;
+}
+
 /* Header */
 .main-nav {
   background: $bg-color;
@@ -30,6 +36,39 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+img:focus {
+  outline: transparent;
+}
+:focus {
+  outline: transparent;
+}
+
+.badge-pill {
+  &.interactive {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  &.light {
+    font-size: 0.8em;
+    background-color: #DFE5E9;
+    color: #53656F;
+  }
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  padding: 0.5em 5em;
+
+  &:hover, &:focus, &:active {
+    border-color: darken($primary-color, 10) !important;
+    background-color: darken($primary-color, 10) !important;
+  }
+}
+
 /* utils */
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+.cursor {
+  cursor: pointer;
+}

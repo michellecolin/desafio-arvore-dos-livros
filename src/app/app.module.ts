@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BookModule } from './book/book.module';
+import { RecordingsModule } from './recordings/recordings.module';
+import { TeatcherInteractionsModule } from './teatcher-interactions/teatcher-interactions.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +13,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BookModule,
+    RecordingsModule,
+    TeatcherInteractionsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,18 @@
+.book {
+  cursor: pointer;
+  width: fit-content;
+  position: relative;
+}
+
+.badge-pill {
+  &.interactive {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  &.light {
+    font-size: 0.8em;
+    background-color: #DFE5E9;
+    color: #53656F;
+  }
+}

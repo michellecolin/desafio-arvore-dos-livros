@@ -6,6 +6,7 @@ import { BookListComponent } from './book-list/book-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import { RecordingsModule } from '../recordings/recordings.module';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
     CommonModule,
     NgbModule,
     RouterModule,
-    NgxExtendedPdfViewerModule
+    NgxExtendedPdfViewerModule,
+    RecordingsModule,
   ]
 })
 export class BookModule { }

@@ -35,11 +35,11 @@
     </span>
   </div>
 
-  <div class="ml-1 book-context d-flex" *ngIf="this.book?.audios?.teatcher?.context && !hideContext">
+  <div class="ml-1 book-context d-flex" (click)="hideContext = true" *ngIf="this.book?.audios?.teatcher?.context && !hideContext">
     <div class="image pb-2"><img src="/assets/img/monkey-search.png"/></div>
     <div class="text p-4">
       <h2>Seu professor deixou um áudio sobre esse livro.</h2>
-      <p>Para ouvir a gravação clique no botão de play no canto direito da tela.</p>
+      <p class="mt-1">Para ouvir a gravação clique no botão de play no canto direito da tela.</p>
     </div>
     <div class="close pt-2 pr-2">
       <span class="material-icons" (click)="hideContext = true">
@@ -47,4 +47,6 @@
       </span>
     </div>
   </div>
+
+  <app-recordings *ngIf="this.book?.audios?.teatcher?.context && firstPage" [audio]="this.book.audios.teatcher.context"></app-recordings>
 </div>

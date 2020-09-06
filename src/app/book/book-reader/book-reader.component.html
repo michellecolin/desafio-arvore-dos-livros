@@ -11,13 +11,25 @@
     [showPresentationModeButton]="false"
     [showOpenFileButton]="false"
     [showPrintButton]="false"
-    [showDownloadButton]="true"
+    [showDownloadButton]="false"
     [showBookmarkButton]="false"
-    [showSecondaryToolbarButton]="true"
+    [showSecondaryToolbarButton]="false"
     [showRotateButton]="false"
     [showHandToolButton]="false"
     [showScrollingButton]="false"
     [showSpreadButton]="false"
     [showPropertiesButton]="false"
   ></ngx-extended-pdf-viewer>
+
+  <div class="next-button" (click)="clickNext()">
+    <span class="material-icons">
+      keyboard_arrow_right
+    </span>
+  </div>
+
+  <div class="previous-button" (click)="clickPrevious()">
+    <span class="material-icons">
+      keyboard_arrow_left
+    </span>
+  </div>
 </div>

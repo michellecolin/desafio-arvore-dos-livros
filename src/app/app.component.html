@@ -1,5 +1,11 @@
 <nav class="navbar navbar-light bg-light main-nav" [ngClass]="{'pdf-nav': pdfView}">
   <img class="cursor" routerLink="/" src="assets/img/logo_arvore.svg"/>
+
+  <button *ngIf="pdfView" class="btn btn-secondary d-flex" routerLink="book/{{book}}">
+    <span class="material-icons mr-2">
+      keyboard_arrow_left
+    </span> Voltar
+  </button>
 </nav>
 
 <router-outlet></router-outlet>

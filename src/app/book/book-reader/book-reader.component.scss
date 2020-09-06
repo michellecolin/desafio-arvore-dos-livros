@@ -1,0 +1,25 @@
+.next-button {
+  right: 10px;
+}
+
+.next-button, .previous-button {
+  position: absolute;
+  top: calc(50vh - 100px);
+  cursor: pointer;
+  &::selection {
+    background: none !important;
+  }
+  
+  .material-icons {
+    font-size: 150px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.57) !important;
+    &::selection {
+      background: none !important;
+    }
+  }
+}
+
+.previous-button {
+  left: 10px;
+}

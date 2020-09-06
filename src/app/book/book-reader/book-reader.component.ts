@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { BoookService } from 'src/app/services/book.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import 'jquery';
+declare var $: any;
 
 @Component({
   selector: 'app-book-reader',
@@ -27,6 +29,14 @@ export class BookReaderComponent implements OnInit {
         this.router.navigateByUrl('/');
       }
     });
+  }
+
+  clickNext() {
+    $('#next').click();
+  }
+
+  clickPrevious() {
+    $('#previous').click();
   }
 
 }

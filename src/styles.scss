@@ -94,6 +94,12 @@ ngx-extended-pdf-viewer {
 
   #viewerContainer {
     overflow: hidden !important;
+    top: 0 !important;
+  }
+
+  .toolbar {
+    position: absolute;
+    bottom: 0;
   }
 
   #viewerContainer, #outerContainer {

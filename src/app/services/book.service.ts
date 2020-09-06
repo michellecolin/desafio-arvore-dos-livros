@@ -14,7 +14,117 @@ export class BoookService {
       interactive: true,
       publisher: 'RDG',
       edition: '1° edição',
-      description: 'Essa é a história da Maria Filó, uma menina alegre e esperta, que curte seus cabelos cacheados de montão! Sabe o que ela descobriu? Que cada um nasce de um jeito, com diversos tipos de cabelo, e que ser cacheada é muito legal! Como são lindos os cachinhos da Maria Filó...'
+      description: 'Essa é a história da Maria Filó, uma menina alegre e esperta, que curte seus cabelos cacheados de montão! Sabe o que ela descobriu? Que cada um nasce de um jeito, com diversos tipos de cabelo, e que ser cacheada é muito legal! Como são lindos os cachinhos da Maria Filó...',
+      audios: {
+        teatcher: {
+          context: '/assets/cabelo-bom-e-o-que/teacther/context.mp3',
+          question: '/assets/cabelo-bom-e-o-que/teacther/question.mp3'
+        },
+        pages: {
+          1: [],
+          2: [],
+          3: [],
+          4: [],
+          5: [
+            { 
+              name: 'Michelle',
+              id: '1',
+              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-5.mp3',
+              avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
+            },
+            { 
+              name: 'Bruno',
+              id: '2',
+              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-5.mp3',
+              avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            }
+          ],
+          6: [
+            { 
+              name: 'Michelle',
+              id: '1',
+              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-6.mp3',
+              avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
+            },
+            { 
+              name: 'Bruno',
+              id: '2',
+              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-6.mp3',
+              avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            }
+          ],
+          7: [
+            { 
+              name: 'Michelle',
+              id: '1',
+              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-7.mp3',
+              avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
+            },
+            { 
+              name: 'Bruno',
+              id: '2',
+              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-7.mp3',
+              avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            }
+          ],
+          8: [
+            { 
+              name: 'Michelle',
+              id: '1',
+              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-8.mp3',
+              avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
+            },
+            { 
+              name: 'Bruno',
+              id: '2',
+              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-8.mp3',
+              avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            }
+          ],
+          9: [
+            { 
+              name: 'Michelle',
+              id: '1',
+              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-9.mp3',
+              avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
+            },
+            { 
+              name: 'Bruno',
+              id: '2',
+              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-9.mp3',
+              avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            }
+          ],
+          10: [
+            { 
+              name: 'Michelle',
+              id: '1',
+              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-10.mp3',
+              avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
+            },
+            { 
+              name: 'Bruno',
+              id: '2',
+              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-10.mp3',
+              avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            }
+          ],
+          11: [
+            { 
+              name: 'Michelle',
+              id: '1',
+              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-11.mp3',
+              avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
+            },
+            { 
+              name: 'Bruno',
+              id: '2',
+              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-11.mp3',
+              avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            }
+          ]
+        }  
+      }
     },
     {
       id: 'sai-fora-coronavirus',

@@ -47,7 +47,8 @@ export class AppComponent implements OnInit {
       event.target.parentElement.nodeName !== 'PDF-PREVIOUS-PAGE' && 
       event.target.parentNode.tagName !== 'svg' && 
       !event.target.textContent.includes('keyboard_arrow_left') &&
-      !event.target.textContent.includes('keyboard_arrow_right')
+      !event.target.textContent.includes('keyboard_arrow_right') &&
+      !event.path.find(p => p?.className?.includes('book-context'))
     ) { //Click is not coming from the buttons that switch the page
       $('.main-nav').toggle();
       $('.next-button').toggle();

@@ -11,6 +11,8 @@ declare var $: any;
 })
 export class BookReaderComponent implements OnInit {
   public book;
+  public pdfLoaded;
+  public hideContext;
   
   constructor(
     private bookService: BoookService,
@@ -39,4 +41,11 @@ export class BookReaderComponent implements OnInit {
     $('#previous').click();
   }
 
+  pageChanged(page) {
+    if (page === 1) {
+      this.hideContext = false;
+    } else {
+      this.hideContext = true;
+    }
+  }
 }

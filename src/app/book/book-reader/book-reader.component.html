@@ -19,6 +19,8 @@
     [showScrollingButton]="false"
     [showSpreadButton]="false"
     [showPropertiesButton]="false"
+    (pdfLoaded)="pdfLoaded = true"
+    (pageChange)="pageChanged($event)"
   ></ngx-extended-pdf-viewer>
 
   <div class="next-button" (click)="clickNext()">
@@ -31,5 +33,18 @@
     <span class="material-icons">
       keyboard_arrow_left
     </span>
+  </div>
+
+  <div class="ml-1 book-context d-flex" *ngIf="this.book?.audios?.teatcher?.context && !hideContext">
+    <div class="image pb-2"><img src="/assets/img/monkey-search.png"/></div>
+    <div class="text p-4">
+      <h2>Seu professor deixou um áudio sobre esse livro.</h2>
+      <p>Para ouvir a gravação clique no botão de play no canto direito da tela.</p>
+    </div>
+    <div class="close pt-2 pr-2">
+      <span class="material-icons" (click)="hideContext = true">
+        close
+      </span>
+    </div>
   </div>
 </div>

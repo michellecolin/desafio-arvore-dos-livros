@@ -9,7 +9,7 @@
   &::selection {
     background: none !important;
   }
-  
+
   .material-icons {
     font-size: 150px;
     font-weight: bold;
@@ -22,4 +22,39 @@
 
 .previous-button {
   left: 10px;
+}
+
+
+.book-context {
+  position: absolute;
+  top: 80px;
+  background: #ECF9DC;
+  z-index: 1;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+
+  h2 {
+    color: #24A37B;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  p {
+    letter-spacing: -0.09px;
+    color: #5C6069;
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+
+  .text {
+    width: 400px;
+  }
+
+  .close {
+    color: #a0b4a2;
+    .material-icons {
+      cursor: pointer;
+      font-size: 1.5em;
+    }
+  }
 }

@@ -19,6 +19,7 @@ export class BookReaderComponent implements OnInit {
   public lastPage;
   public isLastPage = false;
   public zoom = 'page-fit';
+  public hideQuestion;
 
   constructor(
     private bookService: BoookService,

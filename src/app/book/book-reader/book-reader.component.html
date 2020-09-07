@@ -1,6 +1,6 @@
 <div>
   <ngx-extended-pdf-viewer 
-    zoom="page-fit" 
+    [zoom]="zoom" 
     src="/assets/books/{{book.pdf}}" 
     useBrowserLocale="true" 
     height="100vh"
@@ -19,6 +19,7 @@
     [showScrollingButton]="false"
     [showSpreadButton]="false"
     [showPropertiesButton]="false"
+    mobileFriendlyZoom="true"
     (pagesLoaded)="onPagesLoaded($event)"
     (pageChange)="pageChanged($event)"
   ></ngx-extended-pdf-viewer>

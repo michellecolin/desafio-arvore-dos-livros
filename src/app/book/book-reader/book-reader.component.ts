@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { BoookService } from 'src/app/services/book.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import 'jquery';
@@ -18,6 +18,7 @@ export class BookReaderComponent implements OnInit {
   public page = 1;
   public lastPage;
   public isLastPage = false;
+  public zoom = 'page-fit';
 
   constructor(
     private bookService: BoookService,
@@ -26,6 +27,14 @@ export class BookReaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    if (window.innerWidth > 1600) {
+      this.zoom = 'page-fit';
+    } else if (window.innerWidth < 1600 && window.innerWidth > 1300) {
+      this.zoom = 'page-actual';
+    } else if (window.innerWidth <= 1300) {
+      this.zoom = "70%";
+    }
+
     this.route.params.subscribe((params) => {
       if (params.id) {
         this.book = this.bookService.getBook(params.id);
@@ -68,5 +77,16 @@ export class BookReaderComponent implements OnInit {
     this.pdfLoaded = true;
     this.lastPage = $event.pagesCount;
     console.log('event', this.lastPage)
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    if (window.innerWidth > 1600) {
+      this.zoom = 'page-fit';
+    } else if (window.innerWidth < 1600 && window.innerWidth > 1300) {
+      this.zoom = 'page-actual';
+    } else if (window.innerWidth <= 1300) {
+      this.zoom = "70%";
+    }
   }
 }

@@ -16,7 +16,9 @@ export class BookReaderComponent implements OnInit {
   public hideContext;
   public firstPage = true;
   public page = 1;
-  
+  public lastPage;
+  public isLastPage = false;
+
   constructor(
     private bookService: BoookService,
     private route: ActivatedRoute,
@@ -49,9 +51,22 @@ export class BookReaderComponent implements OnInit {
     if (page === 1) {
       this.hideContext = false;
       this.firstPage = true;
+      this.isLastPage = false;
     } else {
       this.hideContext = true;
       this.firstPage = false;
+
+      if (page == this.lastPage) {
+        this.isLastPage = true;
+      } else {
+        this.isLastPage = false;
+      }
     }
+  }
+
+  onPagesLoaded($event) {
+    this.pdfLoaded = true;
+    this.lastPage = $event.pagesCount;
+    console.log('event', this.lastPage)
   }
 }

@@ -22,6 +22,7 @@ export class RecordingsComponent implements OnInit {
   public hasAudios;
   public audios;
   public showAudiosList;
+  public playingAudio;
 
   constructor() { }
 
@@ -29,6 +30,7 @@ export class RecordingsComponent implements OnInit {
   }
 
   initPlayer() {
+    this.playingAudio = false;
     if (this.audio[this._page]?.length > 0) {
       this.hasAudios = true;
       this.audios = this.audio[this._page];

@@ -21,16 +21,30 @@ export class BoookService {
           question: '/assets/audios/cabelo-bom-e-o-que/teacther/question.mp3'
         },
         pages: {
-          1: [],
-          2: [],
-          3: [],
-          4: [],
+          2: [
+            { 
+              name: 'Isadora',
+              id: '3',
+              url: '/assets/audios/cabelo-bom-e-o-que/isadora-page-2.ogg',
+              avatar: 'https://images.pexels.com/photos/1068205/pexels-photo-1068205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            }
+          ],
+          3: [
+          ],
+          4: [
+            { 
+              name: 'Isadora',
+              id: '3',
+              url: '/assets/audios/cabelo-bom-e-o-que/isadora-page-1.ogg',
+              avatar: 'https://images.pexels.com/photos/1068205/pexels-photo-1068205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            }
+          ],
           5: [
             { 
-              name: 'Michelle',
-              id: '1',
-              url: '/assets/audios/cabelo-bom-e-o-que/michelle-page-5.mp3',
-              avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
+              name: 'Isadora',
+              id: '3',
+              url: '/assets/audios/cabelo-bom-e-o-que/isadora-page-3.ogg',
+              avatar: 'https://images.pexels.com/photos/1068205/pexels-photo-1068205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
             },
             { 
               name: 'Bruno',
@@ -40,6 +54,12 @@ export class BoookService {
             }
           ],
           6: [
+            { 
+              name: 'Isadora',
+              id: '3',
+              url: '/assets/audios/cabelo-bom-e-o-que/isadora-page-4.ogg',
+              avatar: 'https://images.pexels.com/photos/1068205/pexels-photo-1068205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            },
             { 
               name: 'Michelle',
               id: '1',
@@ -55,6 +75,12 @@ export class BoookService {
           ],
           7: [
             { 
+              name: 'Isadora',
+              id: '3',
+              url: '/assets/audios/cabelo-bom-e-o-que/isadora-page-5.ogg',
+              avatar: 'https://images.pexels.com/photos/1068205/pexels-photo-1068205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            },
+            { 
               name: 'Michelle',
               id: '1',
               url: '/assets/audios/cabelo-bom-e-o-que/michelle-page-7.mp3',
@@ -68,6 +94,12 @@ export class BoookService {
             }
           ],
           8: [
+            { 
+              name: 'Isadora',
+              id: '3',
+              url: '/assets/audios/cabelo-bom-e-o-que/isadora-page-6.ogg',
+              avatar: 'https://images.pexels.com/photos/1068205/pexels-photo-1068205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            },
             { 
               name: 'Michelle',
               id: '1',
@@ -83,6 +115,12 @@ export class BoookService {
           ],
           9: [
             { 
+              name: 'Isadora',
+              id: '3',
+              url: '/assets/audios/cabelo-bom-e-o-que/isadora-page-7.ogg',
+              avatar: 'https://images.pexels.com/photos/1068205/pexels-photo-1068205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            },
+            { 
               name: 'Michelle',
               id: '1',
               url: '/assets/audios/cabelo-bom-e-o-que/michelle-page-9.mp3',
@@ -97,6 +135,12 @@ export class BoookService {
           ],
           10: [
             { 
+              name: 'Isadora',
+              id: '3',
+              url: '/assets/audios/cabelo-bom-e-o-que/isadora-page-8.ogg',
+              avatar: 'https://images.pexels.com/photos/1068205/pexels-photo-1068205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            },
+            { 
               name: 'Michelle',
               id: '1',
               url: '/assets/audios/cabelo-bom-e-o-que/michelle-page-10.mp3',
@@ -110,6 +154,12 @@ export class BoookService {
             }
           ],
           11: [
+            { 
+              name: 'Isadora',
+              id: '3',
+              url: '/assets/audios/cabelo-bom-e-o-que/isadora-page-9.ogg',
+              avatar: 'https://images.pexels.com/photos/1068205/pexels-photo-1068205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            },
             { 
               name: 'Michelle',
               id: '1',

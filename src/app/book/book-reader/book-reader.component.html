@@ -48,5 +48,13 @@
     </div>
   </div>
 
-  <app-recordings *ngIf="this.book?.audios?.teatcher?.context && firstPage" [audio]="this.book.audios.teatcher.context"></app-recordings>
+  <app-recordings *ngIf="this.book?.audios?.teatcher?.context && firstPage" 
+    [type]="'context'"
+    [audio]="this.book.audios.teatcher.context" 
+    monkey="Clique no botão ao lado para ouvir o áudio do seu professor" tooltip="Clique para ouvir o áudio do seu professor"></app-recordings>
+
+  <!--other pages-->
+  <app-recordings *ngIf="this.book?.audios?.pages && !firstPage" [audio]="this.book.audios.pages" [page]="page"
+    [type]="'pages'"></app-recordings>
+
 </div>

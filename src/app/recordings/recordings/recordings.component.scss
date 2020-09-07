@@ -6,25 +6,44 @@
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid #D1BDFB;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0.5rem;
 
   img {
     height: 60px;
   }
 }
 
-.btn-play {
-  background: darken(#D8C9F9, 5);
+.btn-play, .mat-button {
+  background: darken(#D8C9F9, 5) !important;
   box-shadow: 0px 2px 2px #00000029;
   border: none;
   width: fit-content;
-  padding: 0.2rem 0.5rem;
+  padding: 0.42rem 0.55rem;
   color: #fff;
   display: flex;
   align-items: center;
   
   &:hover {
-    background: darken(#D8C9F9,15);
+    background: darken(#D8C9F9,15) !important;
+  }
+  .material-icons {
+    font-size: 2.2em;
+  }
+}
+
+
+.btn-mic {
+  background: darken(#A4E9B4, 5) !important;
+  box-shadow: 0px 2px 2px #00000029;
+  border: none;
+  width: fit-content;
+  padding: 0.42rem 0.55rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  
+  &:hover {
+    background: darken(#A4E9B4,15) !important;
   }
   .material-icons {
     font-size: 2.2em;

@@ -1,11 +1,51 @@
-<div class="audio-menu d-flex align-items-center">
-  <img class="mr-2" src="/assets/img/monkey-face.svg"/>
+<div class="audio-menu d-flex align-items-center" *ngIf="type === 'context'">
+  <img class="mr-2" src="/assets/img/monkey-face.svg" [ngbTooltip]="monkey"/>
 
   <div>
-    <button class="btn btn-play" placement="left" (click)="playAudio()" ngbTooltip="Clique para ouvir o áudio do seu professor">
+    <button class="btn btn-play" *ngIf="!playing" placement="left" (click)="playing = true" [ngbTooltip]="tooltip"  [openDelay]="800">
       <span class="material-icons">
         play_arrow
       </span>
     </button>
+
+
+    <mat-basic-audio-player 
+      *ngIf="playing"
+      [audioUrl]="audio"
+      [autoPlay]="true" 
+      muted="muted" 
+      (trackEnded)="playing = false;"
+      disablePositionSlider="false"
+      displayVolumeControls="true">
+    </mat-basic-audio-player>
+  </div>
+</div>
+
+
+<div class="audio-menu d-flex align-items-center" *ngIf="type === 'pages'">
+  <img class="mr-2" src="/assets/img/monkey-face.svg" [ngbTooltip]="hasAudios ? 'Nos botões ao lado você pode escutar pessoas lendo essa página para você ou gravar um áudio de você lendo essa página!' : 'Essa página não tem nenhuma leitura gravada. Que tal gravar você lendo para seus colegas escutarem? É só clicar no botão ao lado.'" [openDelay]="hasAudios ? '1000' : '0'"/>
+
+  <div class="d-flex">
+    <button class="btn btn-play mr-2" *ngIf="hasAudios" placement="left" [ngbTooltip]="'Clique aqui para escutar os áudios gravados para essa página'" openDelay="800">
+      <span class="material-icons">
+        play_arrow
+      </span>
+    </button>
+
+    <button class="btn btn-mic" placement="left" [ngbTooltip]="'Clique aqui para gravar um áudio lendo essa página'" openDelay="800">
+      <span class="material-icons">
+        mic
+      </span>
+    </button>
+
+    <mat-basic-audio-player 
+      *ngIf="playing"
+      [audioUrl]="audio"
+      [autoPlay]="true" 
+      muted="muted" 
+      (trackEnded)="playing = false;"
+      disablePositionSlider="false"
+      displayVolumeControls="true">
+    </mat-basic-audio-player>
   </div>
 </div>

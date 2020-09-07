@@ -17,7 +17,7 @@ export class BoookService {
       description: 'Essa é a história da Maria Filó, uma menina alegre e esperta, que curte seus cabelos cacheados de montão! Sabe o que ela descobriu? Que cada um nasce de um jeito, com diversos tipos de cabelo, e que ser cacheada é muito legal! Como são lindos os cachinhos da Maria Filó...',
       audios: {
         teatcher: {
-          context: '/assets/audios/cabelo-bom-e-o-que/teacther/context.mp3',
+          context: '/assets/audios/cabelo-bom-e-o-que/teacther/context.ogg',
           question: '/assets/audios/cabelo-bom-e-o-que/teacther/question.mp3'
         },
         pages: {

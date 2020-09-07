@@ -109,3 +109,42 @@ ngx-extended-pdf-viewer {
     overflow: hidden !important;
   }
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+mat-basic-audio-player {
+  .mat-card {
+    .mat-button:first-of-type {
+      background: darken(#D8C9F9, 5) !important;
+      box-shadow: 0px 2px 2px #00000029;
+      border: none;
+      width: fit-content;
+      padding: 0.2rem 0.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+      border-radius: .25rem;
+      
+      &:hover {
+        background: darken(#D8C9F9,15) !important;
+      }
+      .material-icons {
+        font-size: 2.2em;
+      }
+    }
+  }
+}
+
+.mat-card {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.mat-accent .mat-slider-thumb {
+  background-color: #7E50E5;
+}
+.mat-accent .mat-slider-track-fill {
+  background-color: #7E50E5;
+}

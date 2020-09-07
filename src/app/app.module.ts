@@ -7,6 +7,7 @@ import { BookModule } from './book/book.module';
 import { RecordingsModule } from './recordings/recordings.module';
 import { TeatcherInteractionsModule } from './teatcher-interactions/teatcher-interactions.module';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RouterModule } from '@angular/router';
     BookModule,
     RecordingsModule,
     TeatcherInteractionsModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

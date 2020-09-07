@@ -14,6 +14,7 @@ export class BookReaderComponent implements OnInit {
   public pdfLoaded;
   public hideContext;
   public firstPage = true;
+  public page = 1;
   
   constructor(
     private bookService: BoookService,
@@ -43,6 +44,7 @@ export class BookReaderComponent implements OnInit {
   }
 
   pageChanged(page) {
+    this.page = page;
     if (page === 1) {
       this.hideContext = false;
       this.firstPage = true;

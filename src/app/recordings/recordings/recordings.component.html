@@ -1,5 +1,5 @@
 <div class="audio-menu d-flex align-items-center" *ngIf="type === 'context'">
-  <img class="mr-2" src="/assets/img/monkey-face.svg" [ngbTooltip]="monkey"/>
+  <img class="mr-2" src="./assets/img/monkey-face.svg" [ngbTooltip]="monkey"/>
 
   <div>
     <button class="btn btn-play" *ngIf="!playing" placement="left" (click)="playing = true" [ngbTooltip]="tooltip"  [openDelay]="800">
@@ -24,7 +24,7 @@
 
 
 <div class="audio-menu d-flex align-items-center" *ngIf="type === 'pages'">
-  <img class="mr-2" src="/assets/img/monkey-face.svg" [ngbTooltip]="hasAudios ? 'Nos botões ao lado você pode escutar pessoas lendo essa página para você ou gravar um áudio de você lendo essa página!' : 'Essa página não tem nenhuma leitura gravada. Que tal gravar você lendo para seus colegas escutarem? É só clicar no botão ao lado.'" [openDelay]="hasAudios ? '1000' : '0'"/>
+  <img class="mr-2" src="./assets/img/monkey-face.svg" [ngbTooltip]="hasAudios ? 'Nos botões ao lado você pode escutar pessoas lendo essa página para você ou gravar um áudio de você lendo essa página!' : 'Essa página não tem nenhuma leitura gravada. Que tal gravar você lendo para seus colegas escutarem? É só clicar no botão ao lado.'" [openDelay]="hasAudios ? '1000' : '0'"/>
 
   <div class="d-flex">
     <button class="btn btn-play mr-2" *ngIf="hasAudios" placement="left" (click)="showAudiosList = true" [ngbTooltip]="'Clique aqui para escutar as leituras gravadas para essa página'" openDelay="800">

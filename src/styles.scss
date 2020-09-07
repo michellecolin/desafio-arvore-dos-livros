@@ -174,3 +174,18 @@ mat-basic-audio-player {
 .tooltip.show {
   opacity: 1;
 }
+
+
+.audios-menu {
+  mat-basic-audio-player {
+    .mat-card {
+      min-width: 0;
+      .mat-button {
+        display: none !important;
+      }
+      .ngx-basic-audio-player-duration {
+        display: none !important;
+      }
+    }
+  }
+}

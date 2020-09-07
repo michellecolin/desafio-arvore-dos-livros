@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { BoookService } from 'src/app/services/book.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import 'jquery';
+import { RecordingsComponent } from 'src/app/recordings/recordings/recordings.component';
 declare var $: any;
 
 @Component({

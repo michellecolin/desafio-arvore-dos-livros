@@ -29,13 +29,13 @@ export class BoookService {
             { 
               name: 'Michelle',
               id: '1',
-              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-5.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/michelle-page-5.mp3',
               avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
             },
             { 
               name: 'Bruno',
               id: '2',
-              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-5.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/santiago-page-5.mp3',
               avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
             }
           ],
@@ -43,13 +43,13 @@ export class BoookService {
             { 
               name: 'Michelle',
               id: '1',
-              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-6.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/michelle-page-6.mp3',
               avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
             },
             { 
               name: 'Bruno',
               id: '2',
-              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-6.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/santiago-page-6.mp3',
               avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
             }
           ],
@@ -57,13 +57,13 @@ export class BoookService {
             { 
               name: 'Michelle',
               id: '1',
-              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-7.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/michelle-page-7.mp3',
               avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
             },
             { 
               name: 'Bruno',
               id: '2',
-              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-7.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/santiago-page-7.mp3',
               avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
             }
           ],
@@ -71,13 +71,13 @@ export class BoookService {
             { 
               name: 'Michelle',
               id: '1',
-              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-8.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/michelle-page-8.mp3',
               avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
             },
             { 
               name: 'Bruno',
               id: '2',
-              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-8.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/santiago-page-8.mp3',
               avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
             }
           ],
@@ -85,13 +85,13 @@ export class BoookService {
             { 
               name: 'Michelle',
               id: '1',
-              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-9.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/michelle-page-9.mp3',
               avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
             },
             { 
               name: 'Bruno',
               id: '2',
-              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-9.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/santiago-page-9.mp3',
               avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
             }
           ],
@@ -99,13 +99,13 @@ export class BoookService {
             { 
               name: 'Michelle',
               id: '1',
-              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-10.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/michelle-page-10.mp3',
               avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
             },
             { 
               name: 'Bruno',
               id: '2',
-              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-10.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/santiago-page-10.mp3',
               avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
             }
           ],
@@ -113,13 +113,13 @@ export class BoookService {
             { 
               name: 'Michelle',
               id: '1',
-              url: '/assets/audio/cabelo-bom-e-o-que/michelle-page-11.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/michelle-page-11.mp3',
               avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQHaKLwz1vTivg/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=YosS6UAcpD_IOq77JzjmtohT25qATYxOCkvZg447UEY'
             },
             { 
               name: 'Bruno',
               id: '2',
-              url: '/assets/audio/cabelo-bom-e-o-que/santiago-page-11.mp3',
+              url: '/assets/audios/cabelo-bom-e-o-que/santiago-page-11.mp3',
               avatar: 'https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
             }
           ]

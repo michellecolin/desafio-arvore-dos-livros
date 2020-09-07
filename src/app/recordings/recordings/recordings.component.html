@@ -22,11 +22,12 @@
 </div>
 
 
+
 <div class="audio-menu d-flex align-items-center" *ngIf="type === 'pages'">
   <img class="mr-2" src="/assets/img/monkey-face.svg" [ngbTooltip]="hasAudios ? 'Nos botões ao lado você pode escutar pessoas lendo essa página para você ou gravar um áudio de você lendo essa página!' : 'Essa página não tem nenhuma leitura gravada. Que tal gravar você lendo para seus colegas escutarem? É só clicar no botão ao lado.'" [openDelay]="hasAudios ? '1000' : '0'"/>
 
   <div class="d-flex">
-    <button class="btn btn-play mr-2" *ngIf="hasAudios" placement="left" [ngbTooltip]="'Clique aqui para escutar os áudios gravados para essa página'" openDelay="800">
+    <button class="btn btn-play mr-2" *ngIf="hasAudios" placement="left" (click)="showAudiosList = true" [ngbTooltip]="'Clique aqui para escutar as leituras gravadas para essa página'" openDelay="800">
       <span class="material-icons">
         play_arrow
       </span>
@@ -45,7 +46,40 @@
       muted="muted" 
       (trackEnded)="playing = false;"
       disablePositionSlider="false"
-      displayVolumeControls="true">
+      displayVolumeControls="false">
     </mat-basic-audio-player>
+
+
+    <div class="audios-menu" *ngIf="showAudiosList">
+      <div class="audios">
+        <div class="audio" *ngFor="let audio of audios">
+          <div class="text-center">
+            <img src="{{audio.avatar}}"/>
+            <p class="mt-1">{{audio.name}}</p>
+          </div>
+  
+          <button class="btn btn-play mt-1" *ngIf="hasAudios" [disabled]="playingAudio" placement="left" (click)="currentAudio = audio.url; playingAudio = true;">
+            <span class="material-icons">
+              play_arrow
+            </span>
+          </button>
+        </div>
+        <div class="close">
+          <span class="material-icons" (click)="showAudiosList = false">
+            close
+          </span>
+        </div>
+      </div>
+
+      <mat-basic-audio-player 
+        *ngIf="playingAudio"
+        [audioUrl]="currentAudio"
+        [autoPlay]="true" 
+        muted="muted" 
+        (trackEnded)="playingAudio = false;"
+        disablePositionSlider="false"
+        displayVolumeControls="false">
+      </mat-basic-audio-player>
+    </div>
   </div>
 </div>

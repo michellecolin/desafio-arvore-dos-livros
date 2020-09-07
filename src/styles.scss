@@ -148,3 +148,29 @@ mat-basic-audio-player {
 .mat-accent .mat-slider-track-fill {
   background-color: #7E50E5;
 }
+
+.bs-tooltip-left .arrow::before  {
+  border-left-color: #7e50e5;
+}
+
+.bs-tooltip-right .arrow::before  {
+  border-right-color: #7e50e5;
+}
+
+.bs-tooltip-top .arrow::before  {
+  border-top-color: #7e50e5;
+}
+
+.bs-tooltip-bottom .arrow::before  {
+  border-bottom-color: #7e50e5;
+}
+
+.tooltip-inner {
+  color: #fff;
+  background-color: #7e50e5;
+  border: 1px solid #7e50e5;
+}
+
+.tooltip.show {
+  opacity: 1;
+}

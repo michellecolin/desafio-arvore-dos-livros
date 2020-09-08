@@ -1,4 +1,4 @@
-# desafio-arvore-dos-livros
+# Desafio árvore dos livros
 Repositório do módulo de leitura interativa desenvolvido para o desafio "Árvore" no Mega Hack Woman 2020 pelo time 23.
 
 # Time:

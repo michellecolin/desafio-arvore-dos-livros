@@ -67,9 +67,9 @@
     monkey="Clique no botão ao lado para ouvir o áudio do seu professor" tooltip="Clique para ouvir o áudio do seu professor"></app-recordings>
 
   <app-recordings *ngIf="this.book?.audios?.teatcher?.question && isLastPage" 
-    [type]="'context'"
+    [type]="'question'"
     [audio]="this.book.audios.teatcher.question" 
-    monkey="Clique no botão ao lado para ouvir a pergunta do seu professor" tooltip="Clique para ouvir a pergunta do seu professor"></app-recordings>
+    monkey="Clique nos botões ao lado para ouvir a pergunta do seu professor e para gravar sua resposta" tooltip="Clique para ouvir a pergunta do seu professor"></app-recordings>
 
   <!--other pages-->
   <app-recordings *ngIf="this.book?.audios?.pages && !firstPage && !isLastPage" [audio]="this.book.audios.pages" [page]="page"

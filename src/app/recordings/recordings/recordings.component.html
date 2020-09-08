@@ -1,13 +1,18 @@
-<div class="audio-menu d-flex align-items-center" *ngIf="type === 'context'">
+<div class="audio-menu d-flex align-items-center" *ngIf="type === 'context' || type === 'question'">
   <img class="mr-2" src="./assets/img/monkey-face.svg" [ngbTooltip]="monkey"/>
 
-  <div>
+  <div class="d-flex">
     <button class="btn btn-play" *ngIf="!playing" placement="left" (click)="playing = true" [ngbTooltip]="tooltip"  [openDelay]="800">
       <span class="material-icons">
         play_arrow
       </span>
     </button>
 
+    <button class="btn btn-mic ml-2" *ngIf="type === 'question' && !playing" placement="left" (click)="showMessage()" [ngbTooltip]="'Clique aqui para gravar sua resposta para a pergunta do professor'" openDelay="800">
+      <span class="material-icons">
+        mic
+      </span>
+    </button>
 
     <mat-basic-audio-player 
       *ngIf="playing"
@@ -33,7 +38,7 @@
       </span>
     </button>
 
-    <button class="btn btn-mic" placement="left" [ngbTooltip]="'Clique aqui para gravar um áudio lendo essa página'" openDelay="800">
+    <button class="btn btn-mic" placement="left" [ngbTooltip]="'Clique aqui para gravar um áudio lendo essa página'" (click)="showMessage()" openDelay="800">
       <span class="material-icons">
         mic
       </span>

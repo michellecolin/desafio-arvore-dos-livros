@@ -39,4 +39,8 @@ export class RecordingsComponent implements OnInit {
       this.showAudiosList = false;
     }
   }
+
+  showMessage() {
+    alert('O botão de gravar está aqui somente para fins demonstrativos. Essa funcionalidade não foi abrangida nesta vesão do protótipo');
+  }
 }

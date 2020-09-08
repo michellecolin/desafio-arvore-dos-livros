@@ -34,7 +34,7 @@ O projeto estará rodando em ``http://localhost:4200/``
 Link para DEMO online do protótipo: https://michellecolin.github.io/desafio-arvore-dos-livros/
 
 # Video DEMO
-Link para vídeo de navegação pelo protótipo: youtube.com/watch?v=klmfj5wow0Y&feature=youtu.be
+Link para vídeo de navegação pelo protótipo: https://youtube.com/watch?v=klmfj5wow0Y&feature=youtu.be
 
 # Tecnologias
 Protótipo desenvolvido utilizando o Framewrok Angular + Saas + Bootstrap

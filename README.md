@@ -28,7 +28,7 @@ Esse comando instalará as dependências do projeto
 Em seguida execute
 ``ng serve``
 
-O projeto estará rodando em ``localhost:4200``
+O projeto estará rodando em ``http://localhost:4200/``
 
 # DEMO
 Link para DEMO online do protótipo: https://michellecolin.github.io/desafio-arvore-dos-livros/

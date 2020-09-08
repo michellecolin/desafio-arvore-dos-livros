@@ -108,6 +108,10 @@
   .material-icons {
     font-size: 2.2em;
   }
+
+  &.green {
+    background: darken(#A4E9B4, 10) !important;
+  }
 }
 
 

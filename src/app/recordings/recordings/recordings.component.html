@@ -63,7 +63,7 @@
             <p class="mt-1">{{audio.name}}</p>
           </div>
   
-          <button class="btn btn-play mt-1" *ngIf="hasAudios" [disabled]="playingAudio" placement="left" (click)="currentAudio = audio.url; playingAudio = true;">
+          <button class="btn btn-play mt-1" *ngIf="hasAudios" [ngClass]="{'green': audio.url === currentAudio}" [disabled]="playingAudio" placement="left" (click)="currentAudio = audio.url; playingAudio = true;">
             <span class="material-icons">
               play_arrow
             </span>
